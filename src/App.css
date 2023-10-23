@@ -178,42 +178,34 @@
 #earth-banner{
     grid-column: 1;
     grid-row: 2;
-    background-image: url(./images/desktop/image-deep-earth.jpg);
 }
 #arcade-banner{
     grid-column: 2;
     grid-row: 2;
-    background: URL(./images/desktop/image-night-arcade.jpg);
 }
 #soccer-banner{
     grid-column: 3;
     grid-row: 2;
-    background: URL(./images/desktop/image-soccer-team.jpg);
 }
 #grid-banner{
     grid-column: 4;
     grid-row: 2;
-    background: URL(./images/desktop/image-grid.jpg);
 }
 #borealis-banner{
     grid-column: 1;
     grid-row: 3;
-    background: URL(./images/desktop/image-pocket-borealis.jpg);
 }
 #aboveVR-banner{
     grid-column: 2;
     grid-row: 3;
-    background-image: url(./images/desktop/image-from-above.jpg);
 }
 #coriosity-banner{
     grid-column: 3;
     grid-row: 3;
-    background: URL(./images/desktop/image-curiosity.jpg);
 }
 #fisheye-banner{
     grid-column: 4;
     grid-row: 3;
-    background: URL(./images/desktop/image-fisheye.jpg);
 }
 
 /* Footer */

@@ -1,5 +1,5 @@
 import React from "react";
-import CriationsBanner from './creations'
+import CriationsBanner from './creation-baner'
 
 export default function OurCreations(){
     return(
