@@ -10,7 +10,8 @@
     padding: 60px 0 100px 0;
     display: grid;
     grid-template-columns: repeat(2,40%);
-    grid-template-rows: 10% 90%;
+    grid-template-rows: 10%;
+    grid-auto-rows: 1;
     place-content: center;
 }
 .logo{
