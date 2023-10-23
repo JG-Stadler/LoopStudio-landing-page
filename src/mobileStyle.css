@@ -1,0 +1,55 @@
+@media(max-width:1300px) {
+    .our-creations{
+        grid-template-columns: 85vw;
+        grid-template-rows: repeat(10,200px);
+    }
+    .our-creations h1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .our-creations a{
+        grid-column: 1;
+        grid-row: 10;
+    }
+        #earth-banner{
+            grid-column: 1;
+            grid-row: 2;
+        }
+        #arcade-banner{
+            grid-column: 1;
+            grid-row: 3;
+        }
+        #soccer-banner{
+            grid-column: 1;
+            grid-row: 4;
+        }
+        #grid-banner{
+            grid-column: 1;
+            grid-row: 5;
+        }
+        #borealis-banner{
+            grid-column: 1;
+            grid-row: 6;
+        }
+        #aboveVR-banner{
+            grid-column: 1;
+            grid-row: 7;
+        }
+        #coriosity-banner{
+            grid-column: 1;
+            grid-row: 8;
+        }
+        #fisheye-banner{
+            grid-column: 1;
+            grid-row: 9;
+        }
+        .creations-banner{
+            width: 80vw;
+            height: 200px;
+        }
+        .creations-banner img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }

@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+/* Header styles */
+
+.header-page{
+    background: url(images/desktop/image-hero.jpg);
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: 60px 0 100px 0;
+}
+.header-page div{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    place-items: center;
+}
+.logo{
+    grid-column: 1;
+    grid-row: 1;
+    justify-self: start;
+}
+.nav-bar{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: end;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+}
+.nav-item{
+    position: relative;
+}
+.nav-item::after{
+    content: "";
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%)scaleX(0);
+    background-color: #fff;
+    transform-origin: center;
+    transition: .3s;
+}
+.nav-item:hover::after{
+    transform: translateX(-50%)scaleX(1);
+}
+.apresentation-text{
+    grid-column: 1;
+    grid-row: 2;
+    white-space: nowrap;
+    border: solid 2px #fff;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 20px 60px 20px 40px;
+    margin-top: 100px;
+    justify-self: start;
+}
+.apresentation-text h1{
+    font-family: Montserrat, sans-serif;
+    font-weight: lighter;
+    font-size: 3.5em;
+}
+
+/* VR section */
+
+.interactiveVR{
+    display: flex;
+    justify-content: center;
+    grid-template-columns: 50%;
+    grid-template-rows: 50% 50%;
+    margin-top: 150px;
+}
+.VRinteracive-img{
+    max-width: 80%;
+    transform: translateX(15%);
+}
+.VRtxt{
+    text-align: center;
+    background-color: #fff;
+    padding: 55px;
+    width: 450px;
+    height: fit-content;
+    transform: translate(-25%,100%);
+}
+.VRtxt h1{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: xx-large;
+    font-family: Montserrat, sans-serif;
+}
+
+/* Our Creations */
+
+.our-creations{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    place-content: center;
+    grid-template-columns: repeat(4,260px);
+    grid-template-rows: 50px repeat(2,450px);
+    margin: 200px auto 50px;
+    gap: 25px;
+}
+.our-creations h1{
+    font-family: Montserrat,sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    grid-row: 1;
+    grid-column: 1;
+    white-space: nowrap;
+}
+.our-creations a{
+    border: solid 1.5px black;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none;
+    letter-spacing: .7rem;
+    font-size: .8rem;
+    font-weight: bold;
+    transition: .2s;
+    grid-column: 4;
+    grid-row: 1;
+    width: fit-content;
+    justify-self: end;
+}
+.our-creations a:hover{
+    color: #fff;
+    background-color: black;
+}
+.creation-banner{
+    position: relative;
+    width: fit-content;
+    transition: .3s;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.creation-banner h2{
+    position: absolute;
+    left: 15px;
+    bottom: 20px;
+    color: #fff;
+    z-index: 2;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    max-width: 50%;
+}
+.creation-banner::after{
+    content: "";
+    background: linear-gradient(to bottom,#ffffff46,#fff);
+    width: 100%;
+    height: 99.4%;
+    position: absolute;
+    transform: scaleY(0);
+    transition: .5s;
+    transform-origin: bottom;
+    top: 0;
+    left: 0;
+}
+.creation-banner:hover::after{
+    transform: scaleY(1);
+}
+.creation-banner:hover h2{
+    color: black;
+}
+#earth-banner{
+    grid-column: 1;
+    grid-row: 2;
+    background-image: url(./images/desktop/image-deep-earth.jpg);
+}
+#arcade-banner{
+    grid-column: 2;
+    grid-row: 2;
+    background: URL(./images/desktop/image-night-arcade.jpg);
+}
+#soccer-banner{
+    grid-column: 3;
+    grid-row: 2;
+    background: URL(./images/desktop/image-soccer-team.jpg);
+}
+#grid-banner{
+    grid-column: 4;
+    grid-row: 2;
+    background: URL(./images/desktop/image-grid.jpg);
+}
+#borealis-banner{
+    grid-column: 1;
+    grid-row: 3;
+    background: URL(./images/desktop/image-pocket-borealis.jpg);
+}
+#aboveVR-banner{
+    grid-column: 2;
+    grid-row: 3;
+    background-image: url(./images/desktop/image-from-above.jpg);
+}
+#coriosity-banner{
+    grid-column: 3;
+    grid-row: 3;
+    background: URL(./images/desktop/image-curiosity.jpg);
+}
+#fisheye-banner{
+    grid-column: 4;
+    grid-row: 3;
+    background: URL(./images/desktop/image-fisheye.jpg);
+}
+
+/* Footer */
+
+.page-footer{
+    background-color: black;
+    color: #fff;
+    padding: 45px 0;
+    display: grid;
+    grid-template-columns: repeat(2,40%);
+    grid-template-rows: repeat(2,50px);
+    align-items: center;
+    place-content: center;
+    margin-top: 200px;
+}
+.nav-footer{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.nav-link-footer{
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+}
+.nav-link-footer::after{
+    content: "";
+    width: 40%;
+    height: 1px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%)scaleX(0);
+    background-color: #fff;
+    transform-origin: center;
+    transition: .3s;
+}
+.nav-link-footer:hover::after{
+    transform: translateX(-50%)scaleX(1);
+}
+.social-midias,.page-footer>small{
+    justify-self: self-end;
+}
+.social-midias{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.social-midias>a{
+    position: relative;
+}
+.social-midias>a::after{
+    content: "";
+    width: 55%;
+    height: 1.5px;
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%)scaleX(0);
+    background-color: #fff;
+    transform-origin: center;
+    transition: .3s;
+}
+.social-midias>a:hover::after{
+    transform: translateX(-50%)scaleX(1);
+}
+.page-footer small{
+    opacity: 60%;
+}
