@@ -8,14 +8,10 @@
     background-position: top center;
     background-repeat: no-repeat;
     padding: 60px 0 100px 0;
-}
-.header-page div{
-    width: 80%;
-    margin: auto;
     display: grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: repeat(2,40%);
     grid-template-rows: 10% 90%;
-    place-items: center;
+    place-content: center;
 }
 .logo{
     grid-column: 1;
@@ -26,6 +22,9 @@
     grid-column: 2;
     grid-row: 1;
     justify-self: end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .nav-list{
     display: flex;
