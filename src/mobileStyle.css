@@ -9,7 +9,7 @@
     }
     .VRtxt,.VRinteracive-img{
         transform: translate(0,0);
-        width: 80vw;
+        max-width: 80vw;
     }
     .VRtxt h1{
         font-size: 3rem;
@@ -18,5 +18,101 @@
         font-size: x-large;
         opacity: 50%;
         font-weight: bolder;
+    }
+}
+@media (max-width:1250px) {
+    
+    /* Our Creations */
+
+    .our-creations{
+        grid-template-columns: 80vw;
+        grid-template-rows: 0;
+        grid-auto-rows: 10;
+    }
+    .creation-banner::after{
+        background: linear-gradient(to left,#ffffff46,#fff);
+    }
+    .creation-banner img{
+        max-width: 85vw;
+    }
+    .our-creations h1{
+        grid-row: 1;
+        grid-column: 1;
+        margin-bottom: 70px;
+    }
+    #earth-banner{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    #arcade-banner{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    #soccer-banner{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    #grid-banner{
+        grid-column: 1;
+        grid-row: 5;
+    }
+    #borealis-banner{
+        grid-column: 1;
+        grid-row: 6;
+    }
+    #aboveVR-banner{
+        grid-column: 1;
+        grid-row: 7;
+    }
+    #curiosity-banner{
+        grid-column: 1;
+        grid-row: 8;
+    }
+    #fisheye-banner{
+        grid-column: 1;
+        grid-row: 9;
+    }
+    .our-creations a{
+        grid-row: 10;
+        grid-column: 1;
+        justify-self: center;
+    }
+}
+@media (max-width: 500px){
+    .creation-banner h2{
+        font-size: large;
+    }
+}
+
+    /* Footer */
+
+@media (max-width: 800px){
+    .page-footer{
+        grid-template-columns: 80vw;
+        grid-template-rows: 0;
+        grid-auto-rows: 4;
+        gap: 30px;
+    }
+    .page-footer img{
+        grid-column: 1;
+        grid-row: 1;
+        justify-self: center;
+    }
+    .nav-footer{
+        flex-direction: column;
+        grid-column: 1;
+        grid-row: 2;
+        width: fit-content;
+        justify-self: center;
+    }
+    .social-midias{
+        grid-row: 3;
+        grid-column: 1;
+        justify-self: center;
+    }
+    .page-footer>small{
+        grid-row: 4;
+        grid-column: 1;
+        justify-self: center;
     }
 }

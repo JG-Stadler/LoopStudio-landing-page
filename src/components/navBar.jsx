@@ -21,14 +21,15 @@ export default function NavBar(){
     
             <div className={ButtonClass}
             onClick={()=>{         
-                body.style.overflow="hidden";
                 
                 if(ButtonClass === "menu-button"){
                     SetButtonClass("menu-button menu-button-active");
                     SetNavClass("nav-bar nav-bar-active");
+                    body.style.overflow="hidden";
                 }else{
                     SetButtonClass("menu-button");
                     SetNavClass("nav-bar");
+                    body.style.overflow="";
                 }
             }}>
                 <span id="bar1"></span>
